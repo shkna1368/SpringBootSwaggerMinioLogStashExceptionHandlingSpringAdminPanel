@@ -1,0 +1,418 @@
+00:12:07.257 INFO  Starting Application on DESKTOP-G9H48O5 with PID 5752 (E:\project\SpringBootSwaggerMinioLogStashExceptionHandlingSpringAdminPanel\target\classes started by Java in E:\project\SpringBootSwaggerMinioLogStashExceptionHandlingSpringAdminPanel)
+00:12:07.269 INFO  No active profile set, falling back to default profiles: default
+00:12:10.007 INFO  Bootstrapping Spring Data repositories in DEFAULT mode.
+00:12:10.115 INFO  Finished Spring Data repository scanning in 91ms. Found 1 repository interfaces.
+00:12:10.642 INFO  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:12:11.080 INFO  Tomcat initialized with port(s): 8090 (http)
+00:12:11.116 INFO  Starting service [Tomcat]
+00:12:11.116 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+00:12:11.604 INFO  Initializing Spring embedded WebApplicationContext
+00:12:11.605 INFO  Root WebApplicationContext: initialization completed in 4202 ms
+00:12:12.048 INFO  Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+00:12:12.228 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+00:12:12.401 INFO  HHH000412: Hibernate Core {5.4.8.Final}
+00:12:12.677 INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+00:12:12.898 INFO  HikariPool-1 - Starting...
+00:12:13.149 INFO  HikariPool-1 - Start completed.
+00:12:13.175 INFO  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+00:12:14.582 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:12:14.594 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:12:15.378 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:12:15.577 INFO  Exposing 14 endpoint(s) beneath base path '/actuator'
+00:12:15.690 INFO  Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:12:15.900 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+00:12:16.084 WARN  Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:12:23.723 INFO  Initializing ExecutorService
+00:12:24.067 INFO  Context refreshed
+00:12:24.084 INFO  Found 1 custom documentation plugin(s)
+00:12:24.159 INFO  Scanning for api listing references
+00:12:24.551 INFO  Tomcat started on port(s): 8090 (http) with context path ''
+00:12:24.555 INFO  Started Application in 17.823 seconds (JVM running for 31.095)
+00:12:25.022 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:12:25.023 INFO  Initializing Servlet 'dispatcherServlet'
+00:12:25.032 INFO  Completed initialization in 9 ms
+00:12:29.086 INFO  Application registered itself as 72c73ed9669f
+00:12:29.151 DEBUG Executing SQL query [SELECT 1]
+00:12:43.963 DEBUG Executing SQL query [SELECT 1]
+00:13:03.945 DEBUG Executing SQL query [SELECT 1]
+00:13:23.962 DEBUG Executing SQL query [SELECT 1]
+00:13:43.962 DEBUG Executing SQL query [SELECT 1]
+00:14:03.956 DEBUG Executing SQL query [SELECT 1]
+00:14:23.962 DEBUG Executing SQL query [SELECT 1]
+00:14:43.939 DEBUG Executing SQL query [SELECT 1]
+00:15:03.952 DEBUG Executing SQL query [SELECT 1]
+00:15:23.945 DEBUG Executing SQL query [SELECT 1]
+00:15:43.952 DEBUG Executing SQL query [SELECT 1]
+00:15:50.341 DEBUG Executing SQL query [SELECT 1]
+00:16:03.946 DEBUG Executing SQL query [SELECT 1]
+00:16:23.947 DEBUG Executing SQL query [SELECT 1]
+00:16:32.723 INFO  jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+00:16:37.711 DEBUG Executing SQL query [SELECT 1]
+00:16:43.947 DEBUG Executing SQL query [SELECT 1]
+00:17:01.470 ERROR Exception while processing an asynchronous request
+java.lang.IllegalStateException: Calling [asyncError()] is not valid for a request with Async state [MUST_DISPATCH]
+	at org.apache.coyote.AsyncStateMachine.asyncError(AsyncStateMachine.java:440)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:513)
+	at org.apache.coyote.Request.action(Request.java:430)
+	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:401)
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239)
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:242)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+00:17:03.945 DEBUG Executing SQL query [SELECT 1]
+00:17:06.948 ERROR Exception while processing an asynchronous request
+java.lang.IllegalStateException: Calling [asyncError()] is not valid for a request with Async state [MUST_DISPATCH]
+	at org.apache.coyote.AsyncStateMachine.asyncError(AsyncStateMachine.java:440)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:513)
+	at org.apache.coyote.Request.action(Request.java:430)
+	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:401)
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239)
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:242)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+00:17:23.946 DEBUG Executing SQL query [SELECT 1]
+00:17:43.949 DEBUG Executing SQL query [SELECT 1]
+00:18:03.947 DEBUG Executing SQL query [SELECT 1]
+00:18:23.948 DEBUG Executing SQL query [SELECT 1]
+00:18:43.935 DEBUG Executing SQL query [SELECT 1]
+00:19:03.945 DEBUG Executing SQL query [SELECT 1]
+00:19:23.947 DEBUG Executing SQL query [SELECT 1]
+00:19:43.945 DEBUG Executing SQL query [SELECT 1]
+00:20:03.936 DEBUG Executing SQL query [SELECT 1]
+00:20:21.027 INFO  ArchiveServiceImpl.addArchive
+00:20:22.306 DEBUG insert into archive (audio_url, created_at, descryptions, image_url, pdf_url, title, update_at) values (?, ?, ?, ?, ?, ?, ?)
+00:20:22.314 TRACE binding parameter [1] as [VARCHAR] - [http://127.0.0.1:9000/audio/1579812621828_1.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T205022Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f41e65dfc9ab1daa4c674ba44881795ef963a948974e693eced63165784c255c]
+00:20:22.316 TRACE binding parameter [2] as [TIMESTAMP] - [Fri Jan 24 00:20:22 IRST 2020]
+00:20:22.318 TRACE binding parameter [3] as [VARCHAR] - [8des]
+00:20:22.319 TRACE binding parameter [4] as [VARCHAR] - [http://127.0.0.1:9000/pic/1579812621030_Logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T205021Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f024c0315f7aca01474ae8bace99f531203face825c1798062e044abf0bd2f0d]
+00:20:22.320 TRACE binding parameter [5] as [VARCHAR] - [http://127.0.0.1:9000/pdf/1579812621771_99-049_OpenGIS_Simple_Features_Specification_For_SQL_Rev_1.1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T205021Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a5b7a3562039c63e5776750b929bc91e3f385b6d33bf229abac4e213aa007bb5]
+00:20:22.320 TRACE binding parameter [6] as [VARCHAR] - [1579812622229]
+00:20:22.320 TRACE binding parameter [7] as [TIMESTAMP] - [null]
+00:20:23.947 DEBUG Executing SQL query [SELECT 1]
+00:20:35.305 INFO  ArchiveServiceImpl.getArchives
+00:20:35.503 DEBUG select archive0_.archive_id as archive_1_0_, archive0_.audio_url as audio_ur2_0_, archive0_.created_at as created_3_0_, archive0_.descryptions as descrypt4_0_, archive0_.image_url as image_ur5_0_, archive0_.pdf_url as pdf_url6_0_, archive0_.title as title7_0_, archive0_.update_at as update_a8_0_ from archive archive0_
+00:20:43.947 DEBUG Executing SQL query [SELECT 1]
+00:21:03.947 DEBUG Executing SQL query [SELECT 1]
+00:21:23.947 DEBUG Executing SQL query [SELECT 1]
+00:21:43.944 DEBUG Executing SQL query [SELECT 1]
+00:22:03.935 DEBUG Executing SQL query [SELECT 1]
+00:22:23.943 DEBUG Executing SQL query [SELECT 1]
+00:22:43.939 DEBUG Executing SQL query [SELECT 1]
+00:23:03.946 DEBUG Executing SQL query [SELECT 1]
+00:23:23.945 DEBUG Executing SQL query [SELECT 1]
+00:23:43.936 DEBUG Executing SQL query [SELECT 1]
+00:24:04.995 INFO  Starting Application on DESKTOP-G9H48O5 with PID 4884 (E:\project\SpringBootSwaggerMinioLogStashExceptionHandlingSpringAdminPanel\target\classes started by Java in E:\project\SpringBootSwaggerMinioLogStashExceptionHandlingSpringAdminPanel)
+00:24:04.999 INFO  No active profile set, falling back to default profiles: default
+00:24:06.712 INFO  Bootstrapping Spring Data repositories in DEFAULT mode.
+00:24:06.799 INFO  Finished Spring Data repository scanning in 75ms. Found 1 repository interfaces.
+00:24:07.206 INFO  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:24:07.518 INFO  Tomcat initialized with port(s): 8090 (http)
+00:24:07.528 INFO  Starting service [Tomcat]
+00:24:07.528 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+00:24:07.780 INFO  Initializing Spring embedded WebApplicationContext
+00:24:07.780 INFO  Root WebApplicationContext: initialization completed in 2731 ms
+00:24:08.164 INFO  Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+00:24:08.286 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+00:24:08.376 INFO  HHH000412: Hibernate Core {5.4.8.Final}
+00:24:08.576 INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+00:24:08.723 INFO  HikariPool-1 - Starting...
+00:24:08.880 INFO  HikariPool-1 - Start completed.
+00:24:08.902 INFO  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+00:24:10.055 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:24:10.066 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:24:10.711 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:24:10.903 INFO  Exposing 14 endpoint(s) beneath base path '/actuator'
+00:24:11.000 INFO  Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:24:11.144 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+00:24:11.280 WARN  Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+00:24:18.861 INFO  Initializing ExecutorService
+00:24:19.145 INFO  Context refreshed
+00:24:19.159 INFO  Found 1 custom documentation plugin(s)
+00:24:19.229 INFO  Scanning for api listing references
+00:24:19.531 INFO  Tomcat started on port(s): 8090 (http) with context path ''
+00:24:19.534 INFO  Started Application in 15.149 seconds (JVM running for 20.968)
+00:24:19.887 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:24:19.888 INFO  Initializing Servlet 'dispatcherServlet'
+00:24:19.903 INFO  Completed initialization in 14 ms
+00:24:23.626 INFO  Application registered itself as 72c73ed9669f
+00:24:23.713 DEBUG Executing SQL query [SELECT 1]
+00:24:39.053 DEBUG Executing SQL query [SELECT 1]
+00:24:59.041 DEBUG Executing SQL query [SELECT 1]
+00:25:19.055 DEBUG Executing SQL query [SELECT 1]
+00:25:24.173 INFO  ArchiveServiceImpl.addArchive
+00:25:25.542 DEBUG insert into archive (audio_url, created_at, descryptions, image_url, pdf_url, title, update_at) values (?, ?, ?, ?, ?, ?, ?)
+00:25:25.550 TRACE binding parameter [1] as [VARCHAR] - [http://127.0.0.1:9000/audio/1579812925124_1.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T205525Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=18ddaec0792cf983dfc1ec7eb61e2a3d6692a48984565a3d1d02a526f0955d5e]
+00:25:25.552 TRACE binding parameter [2] as [TIMESTAMP] - [Fri Jan 24 00:25:25 IRST 2020]
+00:25:25.554 TRACE binding parameter [3] as [VARCHAR] - [des]
+00:25:25.555 TRACE binding parameter [4] as [VARCHAR] - [http://127.0.0.1:9000/pic/1579812924175_Logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T205524Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8d647c26addbf0fe41d4fe1fcd14da0127886142662036b1b1006c5407c9ad34]
+00:25:25.556 TRACE binding parameter [5] as [VARCHAR] - [http://127.0.0.1:9000/pdf/1579812924848_Logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T205525Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d1dc659c9286bca0afeb3401f4758a870310dbc49b3941e1f189e38eb77397bd]
+00:25:25.557 TRACE binding parameter [6] as [VARCHAR] - [1579812925479]
+00:25:25.557 TRACE binding parameter [7] as [TIMESTAMP] - [null]
+00:25:25.573 WARN  SQL Error: 0, SQLState: 23505
+00:25:25.574 ERROR ERROR: duplicate key value violates unique constraint "uk_3dvsyo6jcp7surhmrs6033oq5"
+  Detail: Key (descryptions)=(des) already exists.
+00:25:25.588 ERROR ArchiveServiceImpladdArchive
+00:25:39.049 DEBUG Executing SQL query [SELECT 1]
+00:25:59.047 DEBUG Executing SQL query [SELECT 1]
+00:26:19.044 DEBUG Executing SQL query [SELECT 1]
+00:26:39.041 DEBUG Executing SQL query [SELECT 1]
+00:26:59.042 DEBUG Executing SQL query [SELECT 1]
+00:27:19.041 DEBUG Executing SQL query [SELECT 1]
+00:27:39.039 DEBUG Executing SQL query [SELECT 1]
+00:27:59.041 DEBUG Executing SQL query [SELECT 1]
+00:28:19.029 DEBUG Executing SQL query [SELECT 1]
+00:28:39.041 DEBUG Executing SQL query [SELECT 1]
+00:28:59.039 DEBUG Executing SQL query [SELECT 1]
+00:29:19.033 DEBUG Executing SQL query [SELECT 1]
+00:29:39.039 DEBUG Executing SQL query [SELECT 1]
+00:29:59.040 DEBUG Executing SQL query [SELECT 1]
+00:30:19.029 DEBUG Executing SQL query [SELECT 1]
+00:30:39.039 DEBUG Executing SQL query [SELECT 1]
+00:30:59.040 DEBUG Executing SQL query [SELECT 1]
+00:31:19.039 DEBUG Executing SQL query [SELECT 1]
+00:31:39.038 DEBUG Executing SQL query [SELECT 1]
+00:31:59.038 DEBUG Executing SQL query [SELECT 1]
+00:32:19.030 DEBUG Executing SQL query [SELECT 1]
+00:32:39.039 DEBUG Executing SQL query [SELECT 1]
+00:32:59.038 DEBUG Executing SQL query [SELECT 1]
+00:33:19.038 DEBUG Executing SQL query [SELECT 1]
+00:33:39.037 DEBUG Executing SQL query [SELECT 1]
+00:33:59.037 DEBUG Executing SQL query [SELECT 1]
+00:34:19.039 DEBUG Executing SQL query [SELECT 1]
+00:34:26.870 DEBUG Executing SQL query [SELECT 1]
+00:34:39.037 DEBUG Executing SQL query [SELECT 1]
+00:34:59.036 DEBUG Executing SQL query [SELECT 1]
+00:35:06.736 INFO  jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+00:35:19.037 DEBUG Executing SQL query [SELECT 1]
+00:35:39.039 DEBUG Executing SQL query [SELECT 1]
+00:35:59.037 DEBUG Executing SQL query [SELECT 1]
+00:36:19.043 DEBUG Executing SQL query [SELECT 1]
+00:36:39.029 DEBUG Executing SQL query [SELECT 1]
+00:36:59.035 DEBUG Executing SQL query [SELECT 1]
+00:37:19.037 DEBUG Executing SQL query [SELECT 1]
+00:37:39.048 DEBUG Executing SQL query [SELECT 1]
+00:37:59.027 DEBUG Executing SQL query [SELECT 1]
+00:38:19.038 DEBUG Executing SQL query [SELECT 1]
+00:38:39.036 DEBUG Executing SQL query [SELECT 1]
+00:38:59.037 DEBUG Executing SQL query [SELECT 1]
+00:39:19.035 DEBUG Executing SQL query [SELECT 1]
+00:39:39.037 DEBUG Executing SQL query [SELECT 1]
+00:39:59.035 DEBUG Executing SQL query [SELECT 1]
+00:40:19.037 DEBUG Executing SQL query [SELECT 1]
+00:40:39.037 DEBUG Executing SQL query [SELECT 1]
+00:40:59.036 DEBUG Executing SQL query [SELECT 1]
+00:41:19.038 DEBUG Executing SQL query [SELECT 1]
+00:41:39.029 DEBUG Executing SQL query [SELECT 1]
+00:41:59.037 DEBUG Executing SQL query [SELECT 1]
+00:42:19.037 DEBUG Executing SQL query [SELECT 1]
+00:42:39.029 DEBUG Executing SQL query [SELECT 1]
+00:42:59.036 DEBUG Executing SQL query [SELECT 1]
+00:43:19.037 DEBUG Executing SQL query [SELECT 1]
+00:43:39.036 DEBUG Executing SQL query [SELECT 1]
+00:43:59.037 DEBUG Executing SQL query [SELECT 1]
+00:44:19.036 DEBUG Executing SQL query [SELECT 1]
+00:44:39.036 DEBUG Executing SQL query [SELECT 1]
+00:44:59.036 DEBUG Executing SQL query [SELECT 1]
+00:45:19.036 DEBUG Executing SQL query [SELECT 1]
+00:45:39.035 DEBUG Executing SQL query [SELECT 1]
+00:45:59.036 DEBUG Executing SQL query [SELECT 1]
+00:46:19.035 DEBUG Executing SQL query [SELECT 1]
+00:46:39.031 DEBUG Executing SQL query [SELECT 1]
+00:46:59.037 DEBUG Executing SQL query [SELECT 1]
+00:47:19.037 DEBUG Executing SQL query [SELECT 1]
+00:47:39.038 DEBUG Executing SQL query [SELECT 1]
+00:47:59.036 DEBUG Executing SQL query [SELECT 1]
+00:48:19.027 DEBUG Executing SQL query [SELECT 1]
+00:48:39.034 DEBUG Executing SQL query [SELECT 1]
+00:48:59.034 DEBUG Executing SQL query [SELECT 1]
+00:49:19.033 DEBUG Executing SQL query [SELECT 1]
+00:49:39.028 DEBUG Executing SQL query [SELECT 1]
+00:49:59.029 DEBUG Executing SQL query [SELECT 1]
+00:50:19.026 DEBUG Executing SQL query [SELECT 1]
+00:50:39.036 DEBUG Executing SQL query [SELECT 1]
+00:50:59.031 DEBUG Executing SQL query [SELECT 1]
+00:51:01.629 DEBUG Executing SQL query [SELECT 1]
+00:51:08.991 DEBUG Executing SQL query [SELECT 1]
+00:51:19.035 DEBUG Executing SQL query [SELECT 1]
+00:51:39.034 DEBUG Executing SQL query [SELECT 1]
+00:51:59.029 DEBUG Executing SQL query [SELECT 1]
+00:52:19.028 DEBUG Executing SQL query [SELECT 1]
+00:52:39.029 DEBUG Executing SQL query [SELECT 1]
+00:52:59.034 DEBUG Executing SQL query [SELECT 1]
+00:53:19.034 DEBUG Executing SQL query [SELECT 1]
+00:53:39.031 DEBUG Executing SQL query [SELECT 1]
+00:53:59.035 DEBUG Executing SQL query [SELECT 1]
+00:54:19.043 DEBUG Executing SQL query [SELECT 1]
+00:54:39.035 DEBUG Executing SQL query [SELECT 1]
+00:54:59.030 DEBUG Executing SQL query [SELECT 1]
+00:55:19.031 DEBUG Executing SQL query [SELECT 1]
+00:55:39.033 DEBUG Executing SQL query [SELECT 1]
+00:55:59.036 DEBUG Executing SQL query [SELECT 1]
+00:56:19.038 DEBUG Executing SQL query [SELECT 1]
+00:56:39.035 DEBUG Executing SQL query [SELECT 1]
+00:56:59.027 DEBUG Executing SQL query [SELECT 1]
+00:57:19.034 DEBUG Executing SQL query [SELECT 1]
+00:57:39.029 DEBUG Executing SQL query [SELECT 1]
+00:57:59.026 DEBUG Executing SQL query [SELECT 1]
+00:58:19.034 DEBUG Executing SQL query [SELECT 1]
+00:58:39.034 DEBUG Executing SQL query [SELECT 1]
+00:58:59.034 DEBUG Executing SQL query [SELECT 1]
+00:59:19.036 DEBUG Executing SQL query [SELECT 1]
+00:59:39.028 DEBUG Executing SQL query [SELECT 1]
+00:59:59.034 DEBUG Executing SQL query [SELECT 1]
+01:00:19.038 DEBUG Executing SQL query [SELECT 1]
+01:00:39.036 DEBUG Executing SQL query [SELECT 1]
+01:00:59.027 DEBUG Executing SQL query [SELECT 1]
+01:01:19.026 DEBUG Executing SQL query [SELECT 1]
+01:01:39.035 DEBUG Executing SQL query [SELECT 1]
+01:01:59.037 DEBUG Executing SQL query [SELECT 1]
+01:02:19.034 DEBUG Executing SQL query [SELECT 1]
+01:02:39.034 DEBUG Executing SQL query [SELECT 1]
+01:02:44.810 INFO  ArchiveServiceImpl.addArchive
+01:02:46.178 DEBUG insert into archive (audio_url, created_at, descryptions, image_url, pdf_url, title, update_at) values (?, ?, ?, ?, ?, ?, ?)
+01:02:46.180 TRACE binding parameter [1] as [VARCHAR] - [http://127.0.0.1:9000/audio/1579815165791_1.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T213246Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0aca51854b28d01774b238a3c408368d37d357925335a0ac4649750bb0f58bf9]
+01:02:46.181 TRACE binding parameter [2] as [TIMESTAMP] - [Fri Jan 24 01:02:46 IRST 2020]
+01:02:46.182 TRACE binding parameter [3] as [VARCHAR] - [deddd]
+01:02:46.182 TRACE binding parameter [4] as [VARCHAR] - [http://127.0.0.1:9000/pic/1579815164811_Logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T213245Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1716fe0f09a9a662c8e2620233327c57ac0f55b34ab498291f6b5fac0095f143]
+01:02:46.183 TRACE binding parameter [5] as [VARCHAR] - [http://127.0.0.1:9000/pdf/1579815165724_99-049_OpenGIS_Simple_Features_Specification_For_SQL_Rev_1.1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T213245Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=25b1d7d826cd7fc7dde074547f29ad3d40dcce3eae11cdd895738ba463895fb1]
+01:02:46.183 TRACE binding parameter [6] as [VARCHAR] - [1579815166176]
+01:02:46.183 TRACE binding parameter [7] as [TIMESTAMP] - [null]
+01:02:59.036 DEBUG Executing SQL query [SELECT 1]
+01:03:00.659 INFO  ArchiveServiceImpl.addArchive
+01:03:01.410 DEBUG insert into archive (audio_url, created_at, descryptions, image_url, pdf_url, title, update_at) values (?, ?, ?, ?, ?, ?, ?)
+01:03:01.411 TRACE binding parameter [1] as [VARCHAR] - [http://127.0.0.1:9000/audio/1579815181018_1.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T213301Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7b7af0562e3217098b69c6d0b65af975f0befca2556a4cb42f49221d36f72b34]
+01:03:01.411 TRACE binding parameter [2] as [TIMESTAMP] - [Fri Jan 24 01:03:01 IRST 2020]
+01:03:01.412 TRACE binding parameter [3] as [VARCHAR] - [deddd]
+01:03:01.413 TRACE binding parameter [4] as [VARCHAR] - [http://127.0.0.1:9000/pic/1579815180661_Logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T213300Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a963e8d883cb93cc9f3496210b3b179f054c27bd1828604d0de9e9ccc812d5cf]
+01:03:01.413 TRACE binding parameter [5] as [VARCHAR] - [http://127.0.0.1:9000/pdf/1579815180959_99-049_OpenGIS_Simple_Features_Specification_For_SQL_Rev_1.1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T213301Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9511b48fcb6bedcad8783b7a2b57780d2fec840e6ed662ffb30f8465be8a75f9]
+01:03:01.413 TRACE binding parameter [6] as [VARCHAR] - [1579815181408]
+01:03:01.414 TRACE binding parameter [7] as [TIMESTAMP] - [null]
+01:03:01.416 WARN  SQL Error: 0, SQLState: 23505
+01:03:01.416 ERROR ERROR: duplicate key value violates unique constraint "uk_3dvsyo6jcp7surhmrs6033oq5"
+  Detail: Key (descryptions)=(deddd) already exists.
+01:03:01.417 ERROR ArchiveServiceImpladdArchive
+01:03:19.035 DEBUG Executing SQL query [SELECT 1]
+01:03:39.033 DEBUG Executing SQL query [SELECT 1]
+01:03:59.035 DEBUG Executing SQL query [SELECT 1]
+01:04:19.035 DEBUG Executing SQL query [SELECT 1]
+01:04:39.036 DEBUG Executing SQL query [SELECT 1]
+01:04:59.029 DEBUG Executing SQL query [SELECT 1]
+01:05:19.035 DEBUG Executing SQL query [SELECT 1]
+01:05:39.034 DEBUG Executing SQL query [SELECT 1]
+01:05:59.034 DEBUG Executing SQL query [SELECT 1]
+01:06:19.036 DEBUG Executing SQL query [SELECT 1]
+01:06:39.034 DEBUG Executing SQL query [SELECT 1]
+01:06:59.031 DEBUG Executing SQL query [SELECT 1]
+01:07:19.026 DEBUG Executing SQL query [SELECT 1]
+01:07:39.034 DEBUG Executing SQL query [SELECT 1]
+01:07:59.037 DEBUG Executing SQL query [SELECT 1]
+01:08:19.040 DEBUG Executing SQL query [SELECT 1]
+01:08:39.036 DEBUG Executing SQL query [SELECT 1]
+01:08:59.035 DEBUG Executing SQL query [SELECT 1]
+01:09:19.039 DEBUG Executing SQL query [SELECT 1]
+01:09:39.034 DEBUG Executing SQL query [SELECT 1]
+01:09:59.035 DEBUG Executing SQL query [SELECT 1]
+01:10:19.034 DEBUG Executing SQL query [SELECT 1]
+01:10:39.035 DEBUG Executing SQL query [SELECT 1]
+01:10:59.041 DEBUG Executing SQL query [SELECT 1]
+01:11:19.034 DEBUG Executing SQL query [SELECT 1]
+01:11:39.036 DEBUG Executing SQL query [SELECT 1]
+01:11:59.030 DEBUG Executing SQL query [SELECT 1]
+01:12:19.038 DEBUG Executing SQL query [SELECT 1]
+01:12:39.037 DEBUG Executing SQL query [SELECT 1]
+01:12:59.035 DEBUG Executing SQL query [SELECT 1]
+01:13:19.029 DEBUG Executing SQL query [SELECT 1]
+01:13:39.034 DEBUG Executing SQL query [SELECT 1]
+01:13:59.036 DEBUG Executing SQL query [SELECT 1]
+01:14:19.035 DEBUG Executing SQL query [SELECT 1]
+01:14:39.034 DEBUG Executing SQL query [SELECT 1]
+01:14:59.034 DEBUG Executing SQL query [SELECT 1]
+01:15:19.034 DEBUG Executing SQL query [SELECT 1]
+01:15:39.036 DEBUG Executing SQL query [SELECT 1]
+01:15:59.034 DEBUG Executing SQL query [SELECT 1]
+01:16:19.034 DEBUG Executing SQL query [SELECT 1]
+01:16:39.034 DEBUG Executing SQL query [SELECT 1]
+01:16:59.034 DEBUG Executing SQL query [SELECT 1]
+01:17:19.039 DEBUG Executing SQL query [SELECT 1]
+01:17:39.036 DEBUG Executing SQL query [SELECT 1]
+01:17:59.035 DEBUG Executing SQL query [SELECT 1]
+01:18:19.026 DEBUG Executing SQL query [SELECT 1]
+01:18:39.034 DEBUG Executing SQL query [SELECT 1]
+01:19:01.139 INFO  Starting Application on DESKTOP-G9H48O5 with PID 12960 (E:\project\SpringBootSwaggerMinioLogStashExceptionHandlingSpringAdminPanel\target\classes started by Java in E:\project\SpringBootSwaggerMinioLogStashExceptionHandlingSpringAdminPanel)
+01:19:01.143 INFO  No active profile set, falling back to default profiles: default
+01:19:02.805 INFO  Bootstrapping Spring Data repositories in DEFAULT mode.
+01:19:02.899 INFO  Finished Spring Data repository scanning in 82ms. Found 1 repository interfaces.
+01:19:03.325 INFO  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:19:03.652 INFO  Tomcat initialized with port(s): 8090 (http)
+01:19:03.662 INFO  Starting service [Tomcat]
+01:19:03.663 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+01:19:03.920 INFO  Initializing Spring embedded WebApplicationContext
+01:19:03.920 INFO  Root WebApplicationContext: initialization completed in 2725 ms
+01:19:04.350 INFO  Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+01:19:04.487 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+01:19:04.583 INFO  HHH000412: Hibernate Core {5.4.8.Final}
+01:19:04.756 INFO  HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+01:19:04.907 INFO  HikariPool-1 - Starting...
+01:19:05.069 INFO  HikariPool-1 - Start completed.
+01:19:05.096 INFO  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+01:19:06.291 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01:19:06.302 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+01:19:07.044 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:19:07.249 INFO  Exposing 14 endpoint(s) beneath base path '/actuator'
+01:19:07.355 INFO  Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+01:19:07.549 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+01:19:07.716 WARN  Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+01:19:15.822 INFO  Initializing ExecutorService
+01:19:16.188 INFO  Context refreshed
+01:19:16.209 INFO  Found 1 custom documentation plugin(s)
+01:19:16.294 INFO  Scanning for api listing references
+01:19:16.608 INFO  Tomcat started on port(s): 8090 (http) with context path ''
+01:19:16.612 INFO  Started Application in 16.0 seconds (JVM running for 22.33)
+01:19:17.050 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:19:17.050 INFO  Initializing Servlet 'dispatcherServlet'
+01:19:17.061 INFO  Completed initialization in 9 ms
+01:19:21.219 INFO  Application registered itself as 72c73ed9669f
+01:19:21.326 DEBUG Executing SQL query [SELECT 1]
+01:19:36.027 DEBUG Executing SQL query [SELECT 1]
+01:19:56.020 DEBUG Executing SQL query [SELECT 1]
+01:20:16.018 DEBUG Executing SQL query [SELECT 1]
+01:20:36.021 DEBUG Executing SQL query [SELECT 1]
+01:20:56.010 DEBUG Executing SQL query [SELECT 1]
+01:21:16.008 DEBUG Executing SQL query [SELECT 1]
+01:21:36.018 DEBUG Executing SQL query [SELECT 1]
+01:21:56.018 DEBUG Executing SQL query [SELECT 1]
+01:22:16.014 DEBUG Executing SQL query [SELECT 1]
+01:22:36.019 DEBUG Executing SQL query [SELECT 1]
+01:22:56.020 DEBUG Executing SQL query [SELECT 1]
+01:23:16.019 DEBUG Executing SQL query [SELECT 1]
+01:23:36.020 DEBUG Executing SQL query [SELECT 1]
+01:23:56.016 DEBUG Executing SQL query [SELECT 1]
+01:24:16.022 DEBUG Executing SQL query [SELECT 1]
+01:24:36.018 DEBUG Executing SQL query [SELECT 1]
+01:24:56.018 DEBUG Executing SQL query [SELECT 1]
+01:25:16.010 DEBUG Executing SQL query [SELECT 1]
+01:25:36.020 DEBUG Executing SQL query [SELECT 1]
+01:25:56.018 DEBUG Executing SQL query [SELECT 1]
+01:26:16.016 DEBUG Executing SQL query [SELECT 1]
+01:26:36.010 DEBUG Executing SQL query [SELECT 1]
+01:26:56.008 DEBUG Executing SQL query [SELECT 1]
+01:27:16.018 DEBUG Executing SQL query [SELECT 1]
+01:27:36.017 DEBUG Executing SQL query [SELECT 1]
+01:27:56.017 DEBUG Executing SQL query [SELECT 1]
+01:28:16.015 DEBUG Executing SQL query [SELECT 1]
+01:28:36.018 DEBUG Executing SQL query [SELECT 1]
+01:28:56.017 DEBUG Executing SQL query [SELECT 1]
+01:29:16.018 DEBUG Executing SQL query [SELECT 1]
+01:29:36.029 DEBUG Executing SQL query [SELECT 1]
